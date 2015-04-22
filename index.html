@@ -7,21 +7,9 @@
 
 <body>
 
-<div ng-app="myApp" ng-controller="myCtrl">
-  First Name: <input type="text" ng-model="firstName"><br>
-  Last Name: <input type="text" ng-model="lastName"><br>
-  <br>
-  FullName: {{firstName + " " + lastName}}
-
-</div>
-
-<script>
-var app = angular.module('myApp', []);
-app.controller('myCtrl', function($scope){
-  $scope.firstName = "John";
-  $scope.lastName = "Doe";
-});
-</script>
+  <div ng-app="" ng-init="quantity=2;cost=13">
+    <p>Total in dollar: <span ng-bind="quantity * cost"></span></p>
+  </div>
 
 
 </body>
